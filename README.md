@@ -13,7 +13,7 @@
 ### ✨ 特性
 
 - **极简设计**：无冗余功能，专注笔记核心体验  
-- **本地存储**：XML 序列化保障数据隐私  
+- **本地存储**：Room保障数据隐私  
 - **Material 3**：动态色彩与优雅动效  
 
 ---
@@ -24,7 +24,7 @@
 - "Kotlin Coroutines"
 - "ViewModel"
 - "Room"
--"Jetpack Navigation"
+- "Jetpack Navigation"
 ```
 
 ### 🖼️ 界面预览

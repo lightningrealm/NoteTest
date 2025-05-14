@@ -12,7 +12,6 @@ interface ApiService {
      */
     //headers里要放api.chatanywhere.tech提供的token
     @Headers(
-
     )
     @POST("/v1/chat/completions")
     suspend fun getResponse(@Body message:AIMessage):AIResponse

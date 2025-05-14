@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_navigation"
+    app:startDestination="@id/mainContainerFragment">
+
+    <fragment
+        android:id="@+id/mainContainerFragment"
+        android:name="notecom.itaem.ai.note.ui.fragment.maincontainer.MainContainerFragment"
+        android:label="fragment_main_container"
+        tools:layout="@layout/fragment_main_container" >
+        <action
+            android:id="@+id/action_mainContainerFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" >
+            <argument
+                android:name="transitionName"
+                app:argType="string" />
+            <argument
+                android:name="mode"
+                android:defaultValue="0"
+                app:argType="integer" />
+            <argument
+                android:name="id"
+                android:defaultValue=""
+                app:argType="string" />
+            <argument
+                android:name="title"
+                android:defaultValue=""
+                app:argType="string" />
+            <argument
+                android:name="createTime"
+                android:defaultValue=""
+                app:argType="string" />
+            <argument
+                android:name="content"
+                android:defaultValue=""
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="notecom.itaem.ai.note.ui.fragment.editnote.EditNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_edit_note">
+        <argument
+            android:name="transitionName"
+            app:argType="string" />
+        <argument
+            android:name="mode"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="id"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="createTime"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="content"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addNoteFragment_to_aiFragment"
+            app:destination="@id/aiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aiFragment"
+        android:name="notecom.itaem.ai.note.ui.fragment.ai.AiFragment"
+        android:label="fragment_ai"
+        tools:layout="@layout/fragment_ai" >
+        <argument
+            android:name="transitionName"
+            app:argType="string" />
+    </fragment>
+</navigation>

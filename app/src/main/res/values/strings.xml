@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">爱记笔记</string>
+    <string name="note">笔记</string>
+    <string name="favor_folder">收藏夹</string>
+    <string name="setting">设置</string>
+    <string name="my">我的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_notes">我的笔记</string>
+    <string name="folder">文件夹</string>
+    <string name="ellipsis">省略</string>
+    <string name="more">更多</string>
+    <string name="search">搜索</string>
+    <string name="title">标题</string>
+    <string name="content">内容</string>
+    <string name="add_new_note">add_new_note</string>
+    <string name="add">新增</string>
+    <string name="no_content_please_add_a_new_note">无内容，先创建一个笔记吧</string>
+    <string name="get_back">返回</string>
+    <string name="save">保存</string>
+    <string name="add_category">添加标签</string>
+    <string name="insert_title_here">在此输入标题</string>
+    <string name="insert_content_here">在此输入内容</string>
+    <string name="no_content_please_create_a_folder">无内容，请点右上角创建一个收藏夹吧</string>
+    <string name="last_edited">最后编辑</string>
+    <string name="about">关于</string>
+    <string name="please_set_name_for_folder">请为文件夹命名</string>
+    <string name="cancel">取消</string>
+    <string name="affirm">确定</string>
+    <string name="new_folder">新建文件夹</string>
+    <string name="select_categories">选择分组标签</string>
+    <string name="group_for_notes">为笔记分组</string>
+    <string name="categories_label">分组标签</string>
+    <string name="empty">空空如也</string>
+    <string name="no_favor_label_please_new_one">没有收藏分组，请先去新建一个吧</string>
+    <string name="all">全部</string>
+    <string name="choose_category">选择标签</string>
+    <string name="ai_assistant">AI助手</string>
+    <string name="send_message_to_ai_assistant">给AI助手发送消息</string>
+    <string name="send">发送</string>
+</resources>

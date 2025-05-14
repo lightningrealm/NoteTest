@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/notes_item_card"
+        style="@style/Widget.Material3.CardView.Filled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        app:strokeColor="#00000000">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/notes_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/notes_item_title_barrier"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/notes_item_title_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="start"
+                app:constraint_referenced_ids="notes_item_create_time" />
+
+            <TextView
+                android:id="@+id/notes_item_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/notes_item_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/notes_item_title" />
+
+            <TextView
+                android:id="@+id/notes_item_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/content"
+                app:layout_constraintEnd_toEndOf="@id/notes_item_create_time"
+                app:layout_constraintStart_toStartOf="@id/notes_item_title"
+                app:layout_constraintTop_toBottomOf="@id/notes_item_title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notes_item_categories"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="@id/notes_item_title_barrier"
+                app:layout_constraintStart_toStartOf="@id/notes_item_content"
+                app:layout_constraintTop_toBottomOf="@id/notes_item_content"
+                tools:itemCount="1"
+                tools:listitem="@layout/category_select" />
+
+            <View
+                android:id="@+id/notes_item_color_circle"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/circle_shape"
+                app:layout_constraintBottom_toBottomOf="@id/notes_item_categories"
+                app:layout_constraintEnd_toEndOf="@id/notes_item_create_time"
+                app:layout_constraintTop_toTopOf="@id/notes_item_categories" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/notes_item_card" />
+</androidx.constraintlayout.widget.ConstraintLayout>

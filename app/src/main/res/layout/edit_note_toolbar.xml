@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/add_note_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:singleLine="true"
+        app:singleSelection="false">
+
+        <!--暂不兼容 后续通过自定义tohtml实现保存-->
+        <com.google.android.material.chip.Chip
+            android:visibility="gone"
+            android:id="@+id/chipTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:checkable="true"
+            android:text="Title"
+            app:chipIcon="@drawable/ic_big_title"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:checkable="true"
+            android:text="Bold"
+            app:chipIcon="@drawable/ic_bold"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipItalic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Italic"
+            app:chipIcon="@drawable/ic_italic"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipUnderline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Underline"
+            app:chipIcon="@drawable/ic_underline"
+            app:closeIconVisible="false" />
+
+    </com.google.android.material.chip.ChipGroup>
+</LinearLayout>

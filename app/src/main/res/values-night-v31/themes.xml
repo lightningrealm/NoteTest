@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AppCompat.Starting" parent="Base.Theme.爱记笔记">
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_start_anim_light</item>
+    </style>
+</resources>

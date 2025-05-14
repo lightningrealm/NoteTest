@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favor_folder_add"
+        android:title="@string/add"
+        android:icon="@drawable/ic_plus"
+        app:iconTint="?attr/colorOnBackground"
+        app:showAsAction="ifRoom"/>
+    <!--<item
+        android:id="@+id/favor_folder_more"
+        android:title="@string/more"
+        android:icon="@drawable/ic_ellipsis"
+        app:iconTint="?attr/colorOnBackground"
+        app:showAsAction="ifRoom"/>-->
+</menu>

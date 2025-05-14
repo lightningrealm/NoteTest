@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_note"
+        android:title="@string/note"
+        android:icon="@drawable/ic_home_selector"/>
+    <item
+        android:id="@+id/nav_favor"
+        android:title="@string/favor_folder"
+        android:icon="@drawable/ic_folder_selector"/>
+    <item
+        android:visible="false"
+        android:id="@+id/nav_setting"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_setting_selector"/>
+    <item
+        android:visible="false"
+        android:id="@+id/nav_my"
+        android:title="@string/my"
+        android:icon="@drawable/ic_user"/>
+</menu>

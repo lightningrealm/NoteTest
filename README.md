@@ -31,7 +31,7 @@
 
 | 笔记列表                                                     | 编辑界面                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| ![笔记列表](https://github.com/lightningrealm/NoteTest/blob/main/1.png) | ![编辑界面](https://github.com/lightningrealm/NoteTest/blob/main/2.jpg) |
+| ![笔记列表](1.png) | ![编辑界面](2.jpg) |
 
 
 

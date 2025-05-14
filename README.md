@@ -31,7 +31,7 @@
 
 | 笔记列表                                                     | 编辑界面                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| ![image-20250514155340541](C:\Users\lightningrealm\AppData\Roaming\Typora\typora-user-images\image-20250514155340541.png) | ![image-20250514155346174](C:\Users\lightningrealm\AppData\Roaming\Typora\typora-user-images\image-20250514155346174.png) |
+| ![1.png) | ![2.png) |
 
 
 
